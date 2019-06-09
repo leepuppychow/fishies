@@ -13,10 +13,6 @@ import (
 	"go.mongodb.org/mongo-driver/bson/primitive"
 )
 
-type Bass struct {
-	Name string
-}
-
 func AllFish() ([]primitive.M, error) {
 	var results []bson.M
 	ctx, _ := context.WithTimeout(context.Background(), 2*time.Second)
